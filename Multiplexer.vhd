@@ -34,6 +34,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity Multiplexer is
     Port ( A : in STD_LOGIC_VECTOR (2 downto 0);
            B : in STD_LOGIC_VECTOR (2 downto 0);
+           EN : in STD_LOGIC;
            Sel : in STD_LOGIC;
            Output : out STD_LOGIC_VECTOR (2 downto 0));
 end Multiplexer;
@@ -43,10 +44,12 @@ architecture Behavioral of Multiplexer is
 begin
     process (A, B, Sel)
         begin
-            if Sel = '0' then
-                Output <= A;
-            else
-                Output <= B;
+            if EN = '1' then
+                if Sel = '0' then
+                    Output <= A;
+                else
+                    Output <= B;
+                end if;
             end if;
     end process;
 end Behavioral;
