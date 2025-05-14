@@ -37,7 +37,7 @@ A: IN STD_LOGIC_VECTOR(3 downto 0);
 B: IN STD_LOGIC_VECTOR(3 downto 0);
 EN:IN STD_LOGIC; --This enable system decide whether use adder or substractor
 V: OUT STD_LOGIC;--overflow bit
-Ca_out:OUT STD_LOGIC;
+Ca_out:OUT STD_LOGIC;--carry bit
 D: OUT STD_LOGIC_VECTOR(3 downto 0));
 
 end Adder_Substractor;
