@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon May 26 16:44:04 2025
+# Process ID: 8968
+# Current directory: C:/Nano Processor Design Challenge
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10536 C:\Nano Processor Design Challenge\project_1.xpr
+# Log file: C:/Nano Processor Design Challenge/vivado.log
+# Journal file: C:/Nano Processor Design Challenge\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Nano Processor Design Challenge/project_1.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+open_project: Time (s): cpu = 00:00:40 ; elapsed = 00:00:19 . Memory (MB): peak = 853.156 ; gain = 155.301
+update_compile_order -fileset sources_1
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2018.3
+  **** Build date : Dec  7 2018-00:40:27
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 17:15:50 2025...

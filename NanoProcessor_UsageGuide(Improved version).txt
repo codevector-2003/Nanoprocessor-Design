@@ -1,0 +1,65 @@
+
+Nano Processor (Improved Version) - Usage Guide and Instructions
+==================================================================
+
+Overview:
+---------
+This document provides the practical operation instructions, reset mechanisms,
+LED and 7-segment display mappings, and the expected behavior of the circuit
+described in the Improved Nano Processor VHDL design.
+
+1. RESET BUTTON INSTRUCTIONS
+-----------------------------
+- Reset (Input: Reset):
+    * Purpose: Resets the Program Counter and halts current instruction flow.
+    * Usage: Pulse high ('1') for a short time (e.g., 10 ns), then return to low ('0').
+
+- Register Reset (Input: Register_Res):
+    * Purpose: Clears all the registers (R0–R7) in the Register Bank.
+    * Usage: Pulse high ('1') at the beginning of operation for proper initialization.
+
+2. CLOCK SIGNAL
+----------------
+- Clk_in (Input: Clock Signal):
+    * Main clock input for processor execution.
+    * A slower clock (slow_clock) is generated internally.
+
+3. LED SIGNALS (Output: LED[3:0])
+----------------------------------
+- The 4-bit LED output reflects the content of Register R7.
+- Example: If R7 = 1001, the LEDs will light up corresponding to binary 1001.
+
+4. SEVEN SEGMENT DISPLAY
+--------------------------
+- Display (Output: 7 bits): Output lines for the 7-segment display driver.
+- Anode (Output: 4 bits): Only the first digit (right-most) is enabled ("1110").
+- The displayed value corresponds to the content of Register R7 (D_7).
+
+5. INSTRUCTION SET AND EXPECTED BEHAVIOR
+-----------------------------------------
+- The instruction set is 13-bit wide and includes:
+    OPCODE | DEST_REG | SRC_REG | IMM/ADDR
+
+- Supported Instructions:
+    * MOV: Move immediate to register
+    * ADD: Add contents of two registers
+    * NEG: Subtract content of two registers (via control signal)
+    * CMP: Compare two register values
+    * MUL: Multiply two register values
+    * SFT: Shift bits in a register (left/right)
+    * LOG: Logical operations (AND, OR, XOR)
+    * JZR: Jump if zero
+
+- Instruction Example:
+    * "0101110000001": MOVI R7, 1
+    * Executed by fetching operands, decoding via Ins_Decoder, processing through ALU/Multiplier/Comparator/Logical Unit as needed, and updating the register.
+
+6. GENERAL USAGE INSTRUCTIONS
+------------------------------
+- Power on system and apply a clock signal.
+- Apply a short high pulse to both Reset and Register_Res.
+- Program ROM will begin sequential instruction execution.
+- Monitor outputs via LED and 7-segment display to verify operation.
+- Use simulation (e.g., testbench) to validate and observe system behavior.
+
+For more information, refer to simulation diagrams or individual component testbenches.

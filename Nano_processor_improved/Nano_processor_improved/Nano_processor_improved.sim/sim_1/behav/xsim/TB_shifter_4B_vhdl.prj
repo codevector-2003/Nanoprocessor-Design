@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Nano_processor_improved.srcs/sources_1/imports/Nano_processor_improved/shifter_4B.vhd" \
+"../../../../Nano_processor_improved.srcs/sim_1/imports/Nano_processor_improved/TB_shifter_4B.vhd" \
+
+# Do not sort compile order
+nosort

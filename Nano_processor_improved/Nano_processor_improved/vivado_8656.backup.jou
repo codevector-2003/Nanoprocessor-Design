@@ -1,0 +1,48 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Wed May 21 15:38:29 2025
+# Process ID: 8656
+# Current directory: E:/sem 2/Computer organization/Nano_processor_improved/Nano_processor_improved
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8496 E:\sem 2\Computer organization\Nano_processor_improved\Nano_processor_improved\Nano_processor_improved.xpr
+# Log file: E:/sem 2/Computer organization/Nano_processor_improved/Nano_processor_improved/vivado.log
+# Journal file: E:/sem 2/Computer organization/Nano_processor_improved/Nano_processor_improved\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {E:/sem 2/Computer organization/Nano_processor_improved/Nano_processor_improved/Nano_processor_improved.xpr}
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Nano_Processor_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+launch_simulation
+source Nano_Processor_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Ins_Decoder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source Ins_Decoder_tb.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_Mux_5W_4B [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+launch_simulation
+source TB_Mux_5W_4B.tcl
+close_sim
+current_sim simulation_2
+close_sim
+close_sim

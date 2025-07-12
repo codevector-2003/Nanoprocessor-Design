@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Nano_processor_improved.srcs/sources_1/imports/Nano_processor_improved/comparator.vhd" \
+"../../../../Nano_processor_improved.srcs/sim_1/imports/Nano_processor_improved/Comparator_TB.vhd" \
+
+# Do not sort compile order
+nosort
