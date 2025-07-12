@@ -99,11 +99,6 @@ The improved design adds more functionality, including extended instruction supp
 
 ---
 
-### 📁 Tip for Adding Images to GitHub
-
-Make sure you place your diagrams in a folder called `diagrams` (or any name you prefer) within your repository. Then use relative paths in the markdown image syntax like this:
-
-```md
 ![Basic Nano Processor Diagram](diagrams/basic_nano_processor.png)
 
 ✅ Design Source File
