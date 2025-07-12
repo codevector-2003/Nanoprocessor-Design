@@ -2,37 +2,23 @@
 Welcome to the repository for my Nano Processor project, implemented using VHDL and simulated on the Xilinx Vivado platform. This repository contains modular components of a 4-bit Nano Processor architecture, detailed designs, simulations, timing diagrams, and enhancements.
 
 📌 Table of Contents
-Introduction
-
-Components Design
-
-Program ROM
-
-Buses
-
-Instruction Decoder
-
-Program Counter
-
-Register Bank
-
-Multiplexers
-
-4-bit Add/Subtract Unit
-
-3-bit Adder
-
-Structure of Instructions
-
-High-Level Diagram of the Nano Processor
-
-Improved Nano Processor
-
-Detailed Modules and Simulations
-
-Clock Generator
-
-Getting Started
+- [Introduction](#introduction)
+- [Components Design](#components-design)
+  - [Program ROM](#program-rom)
+  - [Buses](#buses)
+  - [Instruction Decoder](#instruction-decoder)
+  - [Program Counter](#program-counter)
+  - [Register Bank](#register-bank)
+  - [Multiplexers](#multiplexers)
+  - [4-bit Add/Subtract Unit](#4-bit-addsubtract-unit)
+  - [3-bit Adder](#3-bit-adder)
+- [Structure of Instructions](#structure-of-instructions)
+- [High-Level Diagram of the Nano Processor](#high-level-diagram)
+- [Improved Nano Processor](#improved-nano-processor)
+- [Detailed Modules and Simulations](#detailed-modules-and-simulations)
+- [Clock Generator](#clock-generator)
+- [Getting Started](#getting-started)
+- [License](#license)
 
 License
 
@@ -40,58 +26,51 @@ License
 This project demonstrates the complete design of a 4-bit Nano Processor from the ground up using VHDL. The design focuses on modularity and includes a fully functional improved version with enhanced instruction decoding and arithmetic operations.
 
 🔧 Components Design
-Program ROM
-Instruction memory for the processor's operation.
+- **Program ROM**  
+  Instruction memory for the processor's operation.
 
-Buses
-Data and control signal pathways between modules.
+- **Buses**  
+  Data and control signal pathways between modules.
 
-Instruction Decoder
-Decodes instruction bits into control signals.
+- **Instruction Decoder**  
+  Decodes instruction bits into control signals.
 
-Program Counter
-Manages the execution flow by addressing instructions.
+- **Program Counter**  
+  Manages the execution flow by addressing instructions.
 
-Register Bank
-Temporary storage for data processing.
+- **Register Bank**  
+  Temporary storage for data processing.
 
-Multiplexers
-Includes:
+- **Multiplexers**  
+  Includes:  
+  &nbsp;&nbsp;• 8-Way 4-Bit MUX  
+  &nbsp;&nbsp;• 2-Way 3-Bit MUX  
+  &nbsp;&nbsp;• 2-Way 4-Bit MUX
 
-8-Way 4-Bit MUX
+- **4-bit Add/Subtract Unit**  
+  Performs binary addition and subtraction.
 
-2-Way 3-Bit MUX
-
-2-Way 4-Bit MUX
-
-4-bit Add/Subtract Unit
-Performs binary addition and subtraction.
-
-3-bit Adder
-Used for internal counter and address logic.
+- **3-bit Adder**  
+  Used for internal counter and address logic.
 
 📘 Structure of Instructions
-Detailed explanation of the binary instruction format used by the processor.
+&nbsp;Detailed explanation of the binary instruction format used by the processor.
 
 📊 High-Level Diagram
-Includes block diagrams for overall system architecture and component interconnection.
+&nbsp;Includes block diagrams for overall system architecture and component interconnection.
 
 🚀 Improved Nano Processor
 This version includes:
 
-Enhanced ALU with more operations
-
-Optimized control logic
-
-Improved instruction set
+- **Enhanced ALU with more operations**
+- **Optimized control logic**
+- **Improved instruction set**
 
 Includes:
 
-Design & simulation source files
-
-Elaborated and implemented schematics
-
-Timing diagrams
+- **Design & simulation source files**
+- **Elaborated and implemented schematics**
+- **Timing
 
 🧪 Detailed Modules and Simulations
 Each component in this repo includes:
@@ -102,7 +81,7 @@ Each component in this repo includes:
 
 This diagram represents the core structure of the initial Nano Processor design, illustrating how each module communicates and works together to execute instructions.
 
-![Basic Nano Processor Diagram](diagrams/b.png)  
+![Basic Nano Processor Diagram](diagrams/basic_nano_processor.png)  
 *Figure: High-Level Architecture of the Basic Nano Processor*
 
 > 📌 Includes: Program ROM, Program Counter, Instruction Decoder, Register Bank, ALU, and Multiplexers.
