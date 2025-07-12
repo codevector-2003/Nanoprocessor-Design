@@ -98,9 +98,6 @@ The improved design adds more functionality, including extended instruction supp
 > 🆕 Improvements include: Better ALU support (e.g., logical ops), refined instruction decoding, and optimizations in register access.
 
 ---
-
-![Basic Nano Processor Diagram](diagrams/basic_nano_processor.png)
-
 ✅ Design Source File
 
 🔍 Elaborated Design Schematic
